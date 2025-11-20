@@ -1,1 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finder Boss GPS Tracker - Real-Time Location Sharing</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom Font Setup */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fc; /* Light Gray Background */
+        }
+        .text-primary { color: #1877f2; } /* Facebook Blue for accents */
+        .bg-primary { background-color: #1877f2; }
+        .shadow-flutter { box-shadow: 0 10px 15px -3px rgba(0, 50, 100, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); }
 
+        /* Animation for Hero Image */
+        @keyframes phone-float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+
+        .phone-mockup {
+            animation: phone-float 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Navigation Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-2">
+                <!-- Icon Placeholder (Simple Location Pin SVG) -->
+                <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+                <span class="text-xl font-bold">FB GPS Tracker</span>
+            </a>
+            <a href="FBgpstracker.apk" class="hidden sm:block bg-primary text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition duration-300 shadow-md">
+                Get the App
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+            
+            <!-- Text Content -->
+            <div class="text-center md:text-left">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-4">
+                    Secure, <span class="text-primary">Real-Time</span> Location Sharing.
+                </h1>
+                <p class="text-xl text-gray-600 mb-8">
+                    Connect with friends, keep family safe, and track devices—all powered by Flutter's speed and cross-platform reliability.
+                </p>
+                
+                <div id="download" class="flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
+<a href="FBgpstracker.apk"><button class="bg-primary text-white px-8 py-3 rounded-xl text-lg font-semibold hover:bg-blue-700 transition duration-300 shadow-xl">
+                        Download on Google Play
+                    </button></a>
+                    <!-- <button class="bg-gray-700 text-white px-8 py-3 rounded-xl text-lg font-semibold hover:bg-gray-600 transition duration-300 shadow-xl">
+                        Download on the App Store
+                    </button> -->
+                </div>
+            </div>
+
+            <!-- Mobile Mockup -->
+            <div class="flex justify-center md:justify-end">
+                <div class="w-64 h-auto shadow-2xl rounded-3xl overflow-hidden bg-white p-2 phone-mockup">
+                    <img 
+                        src="logo.jpg" 
+                        alt="Mobile app screenshot showing map and location pin" 
+                        class="rounded-2xl w-full h-full object-cover border-4 border-gray-100"
+                        onerror="this.onerror=null; this.src='https://placehold.co/300x600/1877f2/ffffff?text=App+Screenshot+Loading+Error';"
+                    >
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Description / Technology Deep Dive Section -->
+    <section id="technology-deep-dive" class="py-20 md:py-32 bg-white border-t border-gray-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Title and Overview -->
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-6 text-primary">Technology Deep Dive: Cloud-Based Location Sharing Utility</h2>
+            <p class="text-lg text-gray-600 mb-12 text-center">
+                The **Real-time GPS Tracker** app is a focused, flexible utility designed for demonstrating and executing secure, real-time location sharing using Google's Firebase cloud services (**Firestore**). This application is the perfect tool for developers, students, or hobbyists needing a simple, reliable, and scalable method to transmit and monitor live GPS coordinates over the internet between two or more devices.
+            </p>
+
+            <!-- How It Works Sub-Section -->
+            <h3 class="text-2xl font-bold mb-6 border-b-2 border-primary pb-2">How It Works: Real-Time Cloud Tracking</h3>
+            
+            <!-- Location Sender -->
+            <div class="mb-8 p-6 bg-gray-100 rounded-xl shadow-md">
+                <h4 class="text-xl font-semibold text-gray-800 mb-2">1. Location Sender (The Device Being Tracked)</h4>
+                <p class="text-gray-700">In this mode, your device continuously captures its current **GPS location** using high-accuracy services. The data is securely streamed to the cloud under a unique **Sender ID**. The Sender ID is prominently displayed, allowing you to share it instantly with the person who needs to monitor the location.</p>
+            </div>
+
+            <!-- Real-Time Tracker -->
+            <div class="mb-8 p-6 bg-gray-100 rounded-xl shadow-md">
+                <h4 class="text-xl font-semibold text-gray-800 mb-2">2. Real-Time Tracker (The Monitoring Device)</h4>
+                <p class="text-gray-700">This device acts as the monitor. By entering a specific **Sender ID**, it immediately begins listening for and displaying the live location updates streamed from the Sender device. The map updates in **real-time**, providing immediate visibility of the Sender's movement.</p>
+            </div>
+
+            <!-- Getting Started -->
+            <h3 class="text-2xl font-bold mb-6 border-b-2 border-primary pb-2 mt-12">Getting Started</h3>
+            <ul class="space-y-4 text-gray-700 list-decimal ml-6">
+                <li>
+                    <strong class="font-semibold">Preparation:</strong> Ensure all participating devices have an active internet connection.
+                </li>
+                <li>
+                    <strong class="font-semibold">Start Sending:</strong> Go to the **Location Sender** mode on the device you want to track to begin broadcasting its location and retrieve its unique Sender ID.
+                </li>
+                <li>
+                    <strong class="font-semibold">Start Receiving:</strong> On the monitoring device, use the **Real-Time Tracker** mode, paste the Sender ID, and tap to start receiving the live location feed.
+                </li>
+            </ul>
+
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 md:py-32 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-16">Key Features</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Feature 1: Real-Time Updates -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-primary hover:shadow-xl transition duration-300">
+                    <svg class="w-10 h-10 text-primary mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <h3 class="text-xl font-semibold mb-3">Instant Location Updates</h3>
+                    <p class="text-gray-600">Utilize highly efficient network protocols for sub-second location reporting, ensuring you always have the most current information.</p>
+                </div>
+
+                <!-- Feature 2: Strict Privacy Controls -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-primary hover:shadow-xl transition duration-300">
+                    <svg class="w-10 h-10 text-primary mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                    </svg>
+                    <h3 class="text-xl font-semibold mb-3">Privacy First Design</h3>
+                    <p class="text-gray-600">You control who sees your location and when. Set temporary sharing limits or create private circles for ultimate data control.</p>
+                </div>
+
+                <!-- Feature 3: Geofencing Alerts -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-primary hover:shadow-xl transition duration-300">
+                    <svg class="w-10 h-10 text-primary mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                    </svg>
+                    <h3 class="text-xl font-semibold mb-3">Boundary Notifications</h3>
+                    <p class="text-gray-600">Set up custom geographic boundaries (Geofences) and receive instant alerts when a tracked member enters or leaves a designated area.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section (Highlighting Flutter) -->
+    <section id="technology" class="py-20 md:py-32 border-t border-gray-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-4">Built with Excellence: Flutter</h2>
+            <p class="text-lg text-gray-600 mb-10">
+                Our application is developed using **Flutter**, Google's UI toolkit for building beautiful, natively compiled applications for mobile, web, and desktop from a single codebase.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row justify-center items-center space-y-6 sm:space-y-0 sm:space-x-12">
+                <!-- Flutter Logo -->
+                <div class="flex items-center space-x-3 p-4 bg-white rounded-xl shadow-flutter">
+                    <img src="logo.jpg" alt="Flutter Logo" class="w-12 h-12">
+                    <span class="text-2xl font-bold">Flutter</span>
+                </div>
+
+                <!-- Backend Note -->
+                <div class="flex items-center space-x-3 p-4 bg-white rounded-xl shadow-flutter">
+                    <svg class="w-12 h-12 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10m0 0h16m-4 0v-4m4 4v-4m-4 4v-4m-4 0v-4m4 4v-4m-4 0v-4m4 0V7m-4 0h16m-4 0v4m4-4V7m-4 0v4"></path>
+                    </svg>
+                    <span class="text-2xl font-bold">Robust Backend</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="#features" class="hover:text-primary transition duration-300">Features</a>
+                <a href="#technology-deep-dive" class="hover:text-primary transition duration-300">Tech Deep Dive</a>
+                <a href="#technology" class="hover:text-primary transition duration-300">Flutter Stack</a>
+                <a href="#" class="hover:text-primary transition duration-300">Privacy Policy</a>
+            </div>
+            <p class="text-sm text-gray-400">&copy; 2025 Finder Boss GPS Tracker. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Simple Scroll to Section Implementation -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
