@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Finder Boss GPS Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #1a73e8;
+            border-bottom: 2px solid #1a73e8;
+            padding-bottom: 5px;
+            margin-top: 25px;
+        }
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            font-size: 1.5em;
+        }
+        h3 {
+            font-size: 1.2em;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        .last-updated {
+            display: block;
+            text-align: center;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy for Finder Boss GPS Tracker</h1>
+        <p class="last-updated">Last Updated: [Date, e.g., November 20, 2025]</p>
+
+        <p>This Privacy Policy explains how Finder Boss ("we," "us," or "our") collects, uses, and discloses information in connection with your use of the Finder Boss GPS tracker mobile application (the "Service").</p>
+
+        <h2>1. Data Controller Contact Information</h2>
+        <p>The Service is provided by:</p>
+        <ul>
+            <li><strong>Name:</strong> Finder Boss</li>
+            <li><strong>Email:</strong> <a href="mailto:elliezarjariolne@gmail.com">elliezarjariolne@gmail.com</a></li>
+            <li><strong>Address:</strong> North Caloocan City</li>
+        </ul>
+
+        <h2>2. Information We Collect</h2>
+        <p>Because the core function of the Service is real-time location sharing, we collect the following types of information:</p>
+
+        <h3>A. Personal Data</h3>
+        <ul>
+            <li><strong>Geolocation Data:</strong> We collect precise, real-time location data (Latitude and Longitude) from your device. This data is **only** collected when you actively enable **Sender Mode** in the application.</li>
+        </ul>
+
+        <h3>B. Non-Personal Data</h3>
+        <ul>
+            <li><strong>Device Identifier (Shareable ID):</strong> A unique, persistent, 9-character alphanumeric ID is generated and stored locally on your device (using SharedPreferences). This ID is required to establish a secure link between the Sender and the Receiver (Tracker).</li>
+            <li><strong>Firebase User ID (UID):</strong> When you use the app, we use Firebase Authentication to sign you in anonymously. This generates a unique, anonymous ID necessary for accessing the Firebase Firestore database securely.</li>
+            <li><strong>Advertising Identifiers:</strong> Third-party advertising partners (like AdMob) may collect information such as your device’s Advertising ID for the purpose of serving personalized advertisements.</li>
+            <li><strong>Log Data:</strong> In the event of an error or crash, we may collect data and information (through third-party products) called Log Data. This Log Data may include information such as your device's IP address, device name, operating system version, the time and date of your use of the Service, and other statistics.</li>
+        </ul>
+
+        <h2>3. How We Use Information</h2>
+        <p>The data we collect is used solely for the following purposes:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Data Collected</th>
+                    <th>Purpose of Use</th>
+                    <th>Legal Basis (Implied Consent/Legitimate Interest)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Geolocation Data</td>
+                    <td>To provide the core functionality of the app: real-time location sharing between the Sender and an authorized Tracker.</td>
+                    <td>Necessary for the performance of the contract (the Service) you request.</td>
+                </tr>
+                <tr>
+                    <td>Device Identifier (Shareable ID)</td>
+                    <td>To establish and maintain a secure, private session link between two devices.</td>
+                    <td>Necessary for the performance of the contract (the Service).</td>
+                </tr>
+                <tr>
+                    <td>Firebase User ID (UID)</td>
+                    <td>To authenticate users anonymously and enforce security rules for accessing location data in Firebase Firestore.</td>
+                    <td>Necessary for legitimate operational interest and security.</td>
+                </tr>
+                <tr>
+                    <td>Advertising Identifiers</td>
+                    <td>To serve advertisements within the app, including personalized or interest-based ads.</td>
+                    <td>Legitimate operational interest and implied consent via use of ad-supported service.</td>
+                </tr>
+                <tr>
+                    <td>Log Data</td>
+                    <td>For troubleshooting and improving the stability and performance of the Service.</td>
+                    <td>Necessary for legitimate operational interest.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>4. How Information is Stored and Shared</h2>
+
+        <h3>A. Data Storage (Firebase Firestore)</h3>
+        <ul>
+            <li>Your Geolocation Data and the Shareable ID are stored temporarily in a Firebase Firestore database.</li>
+            <li><strong>Location Data Lifetime:</strong> Geolocation data is only stored as long as the session is active. Once the Sender or the Tracker manually stops the session, all associated location data is immediately deleted from the database.</li>
+            <li><strong>Data Security:</strong> Data is stored using unique, anonymous UIDs and is secured by Firebase security rules, meaning only the authenticated Sender and the designated Receiver can access the shared location data.</li>
+        </ul>
+
+        <h3>B. Third-Party Services</h3>
+        <p>The Service uses the following third-party services that may collect and process information:</p>
+        <ul>
+            <li>Google Play Services (for Android functionality)</li>
+            <li>Firebase Firestore (for real-time data storage and synchronization)</li>
+            <li>Firebase Authentication (for anonymous user sign-in and security)</li>
+            <li>Google AdMob (for displaying advertisements)</li>
+        </ul>
+        <p>We do not share, sell, or rent your Personal Data to any other third parties or advertisers, except as necessary to integrate the above services (e.g., Google AdMob's use of Advertising IDs for ad serving).</p>
+
+        <h2>5. Advertising and AdMob</h2>
+        <p>The Service is supported by advertising and uses Google AdMob to display ads.</p>
+        <ul>
+            <li><strong>Data Collected by AdMob:</strong> AdMob may collect and use data, including your IP address and device identifiers, to serve ads and measure ad performance. This data may be used to display personalized (interest-based) ads, which are more relevant to you.</li>
+            <li><strong>Your Choices:</strong> You can opt-out of personalized advertising by Google by visiting <a href="https://adssettings.google.com/">Google's Ads Settings</a> or by using the “Limit Ad Tracking” or “Opt-out of Ads Personalization” setting on your mobile device.</li>
+            <li><strong>AdMob Privacy Policy:</strong> For more information on how AdMob and Google handle data, please refer to the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</li>
+        </ul>
+
+        <h2>6. User Control and Consent</h2>
+
+        <h3>A. Consent and Opt-In</h3>
+        <p>Location sharing is 100% voluntary and opt-in. Your Geolocation Data is never collected unless you manually:</p>
+        <ul>
+            <li>Grant the app permission to access your location.</li>
+            <li>Explicitly start the location sharing by activating **Sender Mode**.</li>
+        </ul>
+
+        <h3>B. Stopping Tracking</h3>
+        <p>You can stop sharing your Geolocation Data at any time by pressing the **STOP SHARING** button in the Sender Mode screen. This action immediately ceases all location updates and deletes your location history from our database.</p>
+
+        <h2>7. Security</h2>
+        <p>We value your trust in providing us your Personal Data, thus we strive to use commercially acceptable means of protecting it. However, remember that no method of transmission over the internet or method of electronic storage is 100% secure and reliable, and we cannot guarantee its absolute security.</p>
+
+        <h2>8. Changes to This Privacy Policy</h2>
+        <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date at the top of this document.</p>
+
+        <h2>9. Children's Privacy</h2>
+        <p>These Services do not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13. In the case we discover that a child under 13 has provided us with personal information, we immediately delete this from our servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us so that we will be able to do necessary actions.</p>
+    </div>
+</body>
+</html>
