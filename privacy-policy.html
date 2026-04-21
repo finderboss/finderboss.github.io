@@ -5,154 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Finder Boss GPS Tracker</title>
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f4f7f6;
-        }
-        .container {
-            background-color: #fff;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #1a73e8;
-            border-bottom: 2px solid #1a73e8;
-            padding-bottom: 10px;
-        }
-        h2 {
-            color: #202124;
-            margin-top: 30px;
-            border-left: 5px solid #1a73e8;
-            padding-left: 15px;
-        }
-        h3 {
-            color: #5f6368;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-        table, th, td {
-            border: 1px solid #ddd;
-        }
-        th, td {
-            padding: 12px;
-            text-align: left;
-        }
-        th {
-            background-color: #f8f9fa;
-        }
-        .last-updated {
-            font-style: italic;
-            color: #70757a;
-            margin-bottom: 30px;
-        }
-        .highlight {
-            background-color: #e8f0fe;
-            padding: 2px 5px;
-            border-radius: 4px;
-            font-weight: bold;
-        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f9f9f9; }
+        .container { background: #fff; padding: 40px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-top: 5px solid #00796b; }
+        h1 { color: #00796b; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        h2 { color: #004d40; margin-top: 30px; font-size: 1.4em; }
+        .update-date { font-style: italic; color: #666; margin-bottom: 30px; display: block; }
+        .highlight-box { background: #e0f2f1; border-left: 4px solid #00796b; padding: 15px; margin: 20px 0; font-size: 0.95em; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th, td { text-align: left; padding: 12px; border: 1px solid #ddd; font-size: 0.9em; }
+        th { background-color: #f5f5f5; }
+        .footer { text-align: center; margin-top: 40px; font-size: 0.8em; color: #888; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Privacy Policy for Finder Boss GPS Tracker</h1>
-        <p class="last-updated">Last Updated: April 14, 2026</p>
+        <h1>Privacy Policy: Finder Boss</h1>
+        <span class="update-date">Last Updated: April 21, 2026</span>
 
-        <p>This Privacy Policy explains how <strong>Finder Boss</strong> ("we," "us," or "our") collects, uses, and discloses information in connection with your use of the Finder Boss GPS tracker mobile application (the "Service").</p>
+        <p>This Privacy Policy explains how <strong>Finder Boss</strong> ("we," "us," or "our") collects, uses, and protects your information in connection with your use of the Finder Boss GPS Tracker mobile application (the "Service").</p>
 
         <h2>1. Data Controller Contact Information</h2>
-        <p>The Service is provided by:</p>
-        <ul>
-            <li><strong>Name:</strong> Finder Boss</li>
-            <li><strong>Email:</strong> <a href="mailto:elliezarjariolne@gmail.com">elliezarjariolne@gmail.com</a></li>
-            <li><strong>Address:</strong> North Caloocan City, Philippines</li>
-        </ul>
+        <p>The Service is provided by <strong>Elliezar</strong> (Finder Boss Founder).<br>
+        <strong>Email:</strong> elliezarjariolne@gmail.com<br>
+        <strong>Location:</strong> North Caloocan City, Metro Manila, Philippines</p>
 
         <h2>2. Information We Collect</h2>
-        <p>Because the core function of the Service is real-time tactical location sharing, we collect the following:</p>
+        
+        <h3>A. Precise Geolocation Data</h3>
+        <p>Finder Boss collects precise, real-time location data (Latitude and Longitude) to provide core tactical tracking features. This data is only collected when you actively enable "Sender Mode" or join a "Convoy Room."</p>
 
-        <h3>A. Personal Data</h3>
+        <div class="highlight-box">
+            <strong>BACKGROUND LOCATION DISCLOSURE:</strong> 
+            To support the <strong>Emergency Intercept</strong> system and continuous convoy tracking, Finder Boss collects location data <strong>even when the app is closed or not in use</strong>. This ensures your designated group members can locate you during an SOS event or a long-distance convoy ride without requiring you to keep your screen active, significantly improving safety and battery management.
+        </div>
+
+        <h3>B. Device Identifiers & Telemetry</h3>
         <ul>
-            <li><strong>Geolocation Data:</strong> We collect precise, real-time location data (Latitude and Longitude). This is <strong>only</strong> collected when you actively enable <span class="highlight">Sender Mode</span> or join a <span class="highlight">Convoy Room</span>.</li>
-            <li><strong>Background Location:</strong> To support the <span class="highlight">Emergency Intercept</span> system and continuous Convoy tracking, the App collects location data even when the app is closed or not in use. This ensures your teammates can find you during an SOS event or a long-distance ride without keeping your screen on.</li>
+            <li><strong>Network Broadcast ID:</strong> A unique 9-character alphanumeric ID generated locally via SharedPreferences to securely link Senders and Receivers.</li>
+            <li><strong>Status Telemetry:</strong> User-selected status markers (e.g., HOME, CR, WAITING, EMERGENCY) to communicate your state to authorized users.</li>
+            <li><strong>Advertising IDs:</strong> Used for secure database access and ad delivery via Google AdMob to provide the service at no cost to users.</li>
         </ul>
 
-        <h3>B. Non-Personal Data</h3>
-        <ul>
-            <li><strong>Device Identifier (Shareable ID):</strong> A unique 9-character ID generated locally to link Senders and Receivers.</li>
-            <li><strong>Status Telemetry:</strong> We collect the "Status" you select (e.g., <strong>HOME, CR, WAITING, EMERGENCY</strong>) to update your marker for other authorized users in your session.</li>
-            <li><strong>Firebase UID & Advertising IDs:</strong> Used for secure database access and ad delivery via Google AdMob.</li>
-        </ul>
-
-        <h2>3. How We Use Information</h2>
+        <h2>3. Use of Information</h2>
         <table>
-            <thead>
-                <tr>
-                    <th>Data Collected</th>
-                    <th>Purpose of Use</th>
-                    <th>Legal Basis</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>Geolocation Data</strong></td>
-                    <td>Real-time tracking between Sender and authorized Tracker/Convoy.</td>
-                    <td>Performance of Contract</td>
-                </tr>
-                <tr>
-                    <td><strong>Background Location</strong></td>
-                    <td>Enables Emergency Alerts and background Convoy updates.</td>
-                    <td>Vital Interests / Safety</td>
-                </tr>
-                <tr>
-                    <td><strong>Status Telemetry</strong></td>
-                    <td>Communicates your current state (e.g., "At CR") to your group.</td>
-                    <td>Performance of Contract</td>
-                </tr>
-                <tr>
-                    <td><strong>Device & Firebase IDs</strong></td>
-                    <td>Session security and anonymous authentication.</td>
-                    <td>Legitimate Interest</td>
-                </tr>
-                <tr>
-                    <td><strong>Advertising IDs</strong></td>
-                    <td>Serving ads via Google AdMob to keep the service free.</td>
-                    <td>Legitimate Interest</td>
-                </tr>
-            </tbody>
+            <tr>
+                <th>Data Category</th>
+                <th>Purpose of Use</th>
+                <th>Legal Basis</th>
+            </tr>
+            <tr>
+                <td>Geolocation</td>
+                <td>Real-time synchronization between Senders and Trackers.</td>
+                <td>Performance of Contract</td>
+            </tr>
+            <tr>
+                <td>Background Location</td>
+                <td>Critical Emergency Alerts and Background Convoy Updates.</td>
+                <td>Vital Interests / Safety</td>
+            </tr>
+            <tr>
+                <td>Status Markers</td>
+                <td>In-group communication (e.g., "At CR").</td>
+                <td>Performance of Contract</td>
+            </tr>
+            <tr>
+                <td>Device IDs</td>
+                <td>Session security and "Pro" subscription verification.</td>
+                <td>Legitimate Interest</td>
+            </tr>
         </table>
 
-        <h2>4. How Information is Shared (The Convoy Protocol)</h2>
-        <ul>
-            <li><strong>Convoy Rooms:</strong> When you join a Room, your location and status are shared <strong>only</strong> with members of that specific room.</li>
-            <li><strong>Emergency Signals:</strong> If you trigger an <strong>Emergency</strong> signal, your location is broadcast with high priority to your group, triggering a persistent vibration alarm on their devices.</li>
-            <li><strong>Data Lifetime:</strong> Location data is temporary. Once a session is ended, all associated real-time coordinates are cleared from the active database.</li>
-        </ul>
+        <h2>4. Data Sharing & Security</h2>
+        <p><strong>The Convoy Protocol:</strong> Your location is shared <strong>exclusively</strong> with users to whom you have provided your Broadcast ID or members of your specific Convoy Room. All coordinates are transmitted via secure SSL/TLS encryption to our Firebase real-time database.</p>
+        
+        <p><strong>Data Lifetime:</strong> Location data is ephemeral. Once a session is manually ended by the user, coordinates are cleared from the active real-time database.</p>
 
-        <h2>5. User Control and Consent</h2>
-        <ul>
-            <li><strong>Voluntary Sharing:</strong> Location sharing is 100% opt-in. No data is collected unless you manually grant permissions and start a session.</li>
-            <li><strong>Background Permission:</strong> You will be prompted specifically for background location access. You can revoke this in device settings, though it will disable the "Emergency" and "Background Convoy" features.</li>
-            <li><strong>Stopping Tracking:</strong> You can stop sharing at any time by pressing <strong>STOP SHARING</strong> or leaving the room. This immediately ceases data collection and deletes your active session history.</li>
-        </ul>
+        <h2>5. User Rights & Permissions</h2>
+        <p>You have full control over your data. You may stop sharing at any time by pressing "STOP SHARING," which immediately ceases data collection. You can revoke background location permissions in your device settings at any time, though this will disable the emergency and background tracking features.</p>
 
-        <h2>6. Security</h2>
-        <p>With 9 years of professional development expertise, we utilize commercially acceptable encryption and Firebase security rules to protect your data. However, no electronic storage is 100% secure; we strive for maximum protection but cannot guarantee absolute security.</p>
-
-        <h2>7. Children's Privacy</h2>
-        <p>The Service does not address anyone under 13. We do not knowingly collect data from children. If we discover a child under 13 has provided data, we delete it immediately.</p>
-
-        <h2>8. Changes to This Policy</h2>
-        <p>We may update this policy for future HUD or telemetry enhancements. We will notify you by updating the "Last Updated" date at the top of this document.</p>
+        <div class="footer">
+            &copy; 2026 Finder Boss • Built with 9 Years of Professional Development Expertise • Caloocan, Philippines
+        </div>
     </div>
 </body>
 </html>
